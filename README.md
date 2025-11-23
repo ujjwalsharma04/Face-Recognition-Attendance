@@ -22,15 +22,25 @@ Built for college/student attendance automation.
 
 FaceRecognitionProject/
 │── capture_dataset.py
+
 │── trainer.py
+
 │── recognizer.py
+
 │── app.py
+
 │── haarcascade_frontalface_default.xml
+
 │── trainer.yml
+
 │── attendance.csv
+
 │── dataset/
+
 │ ├── person1/
+
 │ ├── person2/
+
 │ ├── ...
 │── .gitignore
 │── README.md
@@ -38,7 +48,7 @@ FaceRecognitionProject/
 
 ## 🛠 Requirements
 
-Install dependencies:
+-- Install dependencies:
 
 pip install opencv-python
 
@@ -48,51 +58,56 @@ pip install numpy
 
 pip install streamlit
 
-📸 1. Capture Dataset
+-- 📸 1. Capture Dataset
 Run the script to capture images for a person:
-
 python capture_dataset.py
 
-It will:
+- It will:
 Ask for person's name
-Create a folder inside dataset/
-Capture face images
-Save automatically
 
-🧠 2. Train the Model
+- Create a folder inside dataset/
 
+- Capture face images
+
+- Save automatically
+
+-- 🧠 2. Train the Model
 python trainer.py
 
-It will:
+- It will:
 Load all folders in dataset/
-Train LBPH model
-Save model as trainer.yml
 
-🧾 3. Run Attendance Recognizer
+- Train LBPH model
 
+- Save model as trainer.yml
+
+-- 🧾 3. Run Attendance Recognizer
 python recognizer.py
 
-It will:
+- It will:
 Detect faces live
-Recognize person name
-Store attendance → attendance.csv
 
-🌐 4. Streamlit Web App
+- Recognize person name
+
+- Store attendance → attendance.csv
+
+-- 🌐 4. Streamlit Web App
 Run:
 streamlit run app.py
 
-App includes:
+-- App includes:
 Login page (Admin only)
-Buttons to run:
-Capture Dataset
-Train Model
-Mark Attendance
-View attendance inside the app
+
+-Buttons to run:
+Capture Dataset,
+Train Model,
+Mark Attendance,
+View attendance inside the app.
 
 
 👨‍💻 Technologies Used
-Python
-OpenCV
-NumPy
-Streamlit
+Python,
+OpenCV,
+NumPy,
+Streamlit,
 LBPH Face Recognizer
