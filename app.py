@@ -5,9 +5,7 @@ import numpy as np
 import datetime
 import csv
 
-# --------------------------------
-# CONFIG
-# --------------------------------
+
 ADMIN_PASSWORD = "admin123"
 DATASET_PATH = "dataset"
 CASCADE_PATH = "haarcascade_frontalface_default.xml"
@@ -16,9 +14,7 @@ ATTENDANCE_FILE = "attendance.csv"
 
 face_cascade = cv2.CascadeClassifier(CASCADE_PATH)
 
-# --------------------------------
-# FUNCTIONS
-# --------------------------------
+
 def mark_attendance(name):
     if not os.path.exists(ATTENDANCE_FILE):
         with open(ATTENDANCE_FILE, "w", newline="") as f:
